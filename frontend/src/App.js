@@ -35,6 +35,7 @@ function App() {
               <Route path="/contact" element={<ContactPage />} />
               <Route path="/reproduction" element={<ReproductionPage />} />
               <Route path="/sterilization" element={<SterilizationPage />} />
+              <Route path="/payroll" element={<PayrollTemplates />} />
             </Routes>
           </main>
           <Footer />
