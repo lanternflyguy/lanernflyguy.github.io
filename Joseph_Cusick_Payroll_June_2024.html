@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joseph Cusick - June 2024 Payroll</title>
+    <style>
+        @page { margin: 0.75in; size: letter; }
+        @media print { .no-print { display: none !important; } }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 20px; }
+        .header { text-align: center; border-bottom: 3px solid #dc2626; padding-bottom: 15px; margin-bottom: 20px; }
+        .company-name { font-size: 24px; font-weight: bold; color: #1e293b; }
+        .company-info { font-size: 12px; color: #64748b; margin: 10px 0; }
+        .doc-title { font-size: 18px; font-weight: bold; color: #dc2626; margin-top: 15px; }
+        .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 25px; }
+        .info-box { border: 1px solid #d1d5db; padding: 12px; background: #f8fafc; }
+        .info-label { font-weight: bold; color: #374151; margin-bottom: 8px; }
+        .info-line { border-bottom: 1px solid #6b7280; height: 25px; }
+        table { width: 100%; border-collapse: collapse; margin: 20px 0; }
+        th, td { border: 1px solid #d1d5db; padding: 10px; text-align: left; }
+        th { background: #f1f5f9; font-weight: bold; }
+        .total-row { background: #fef3c7; font-weight: bold; }
+        .net-row { background: #dcfce7; font-weight: bold; font-size: 16px; }
+        .signature-section { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; margin-top: 40px; }
+        .sig-line { border-bottom: 2px solid #374151; height: 40px; margin-bottom: 8px; }
+        .sig-label { text-align: center; font-size: 12px; color: #64748b; }
+    </style>
+</head>
+<body>
+    <button class="no-print" onclick="window.print()" style="background:#dc2626; color:white; border:none; padding:10px 20px; border-radius:5px; margin-bottom:20px;">🖨️ Print Payroll Sheet</button>
+
+    <div class="header">
+        <div class="company-name">THE LANTERN FLY GUY INC</div>
+        <div class="company-info">
+            Spotted Lanternfly Elimination Specialists<br>
+            228 Park Avenue South, New York, NY 11003<br>
+            Phone: (516) 870-8356 | chris@lanternflyguy.com<br>
+            EPA Licensed & Insured
+        </div>
+        <div class="doc-title">EMPLOYEE PAYROLL RECORD - JUNE 2024</div>
+    </div>
+
+    <div class="info-grid">
+        <div class="info-box">
+            <div class="info-label">Employee Name:</div>
+            <div class="info-line">Joseph Cusick</div>
+        </div>
+        <div class="info-box">
+            <div class="info-label">Employee ID:</div>
+            <div class="info-line">LFG-002</div>
+        </div>
+        <div class="info-box">
+            <div class="info-label">Position/Role:</div>
+            <div class="info-line">CTO & Co-Inventor / Field Technician</div>
+        </div>
+        <div class="info-box">
+            <div class="info-label">Pay Period:</div>
+            <div class="info-line">June 1, 2024 - June 30, 2024</div>
+        </div>
+        <div class="info-box">
+            <div class="info-label">Department:</div>
+            <div class="info-line">Technology & Field Operations</div>
+        </div>
+        <div class="info-box">
+            <div class="info-label">Supervisor:</div>
+            <div class="info-line">Christopher Schenker, CEO</div>
+        </div>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Earnings Description</th>
+                <th>Rate</th>
+                <th>Hours/Quantity</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Regular Hours (40 hrs/week max)</td>
+                <td>$_______ /hour</td>
+                <td>_______ hours</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Overtime Hours (1.5x rate)</td>
+                <td>$_______ /hour</td>
+                <td>_______ hours</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Field Service Completed</td>
+                <td>$_______ /service</td>
+                <td>_______ services</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Emergency Call Bonus</td>
+                <td>$_______ /call</td>
+                <td>_______ calls</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Sales Commission</td>
+                <td>_______ %</td>
+                <td>$_______ sales</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Other Compensation</td>
+                <td>Misc</td>
+                <td>_______</td>
+                <td>$_______</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>GROSS WAGES</strong></td>
+                <td><strong>$_______</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th colspan="2">Deductions</th>
+                <th>Rate</th>
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Federal Income Tax</td>
+                <td>Withholding</td>
+                <td>_______%</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>NY State Income Tax</td>
+                <td>Withholding</td>
+                <td>_______%</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Social Security Tax</td>
+                <td>FICA</td>
+                <td>6.20%</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Medicare Tax</td>
+                <td>FICA</td>
+                <td>1.45%</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Health Insurance</td>
+                <td>Employee Portion</td>
+                <td>_______</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Workers' Compensation</td>
+                <td>Insurance</td>
+                <td>_______</td>
+                <td>$_______</td>
+            </tr>
+            <tr>
+                <td>Other Deductions</td>
+                <td>_______</td>
+                <td>_______</td>
+                <td>$_______</td>
+            </tr>
+            <tr class="total-row">
+                <td colspan="3"><strong>TOTAL DEDUCTIONS</strong></td>
+                <td><strong>$_______</strong></td>
+            </tr>
+            <tr class="net-row">
+                <td colspan="3"><strong>NET PAY (Take Home)</strong></td>
+                <td><strong>$_______</strong></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div style="margin: 30px 0; padding: 15px; background: #f0f9ff; border: 2px solid #3b82f6;">
+        <strong>Pay Method:</strong> ☐ Check #_______ ☐ Direct Deposit ☐ Cash<br>
+        <strong>Pay Date:</strong> _________________<br>
+        <strong>Notes:</strong> ________________________________
+    </div>
+
+    <div class="signature-section">
+        <div>
+            <div class="sig-line"></div>
+            <div class="sig-label">Joseph Cusick<br>Employee Signature & Date</div>
+        </div>
+        <div>
+            <div class="sig-line"></div>
+            <div class="sig-label">Christopher Schenker<br>Employer/CEO Signature & Date</div>
+        </div>
+    </div>
+
+    <div style="margin-top: 30px; text-align: center; font-size: 10px; color: #64748b;">
+        This payroll record is confidential and for official business use only.<br>
+        The Lantern Fly Guy Inc - Professional Spotted Lanternfly Elimination Services
+    </div>
+</body>
+</html>
